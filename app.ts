@@ -1,7 +1,10 @@
+type Conbinable = number | string;
+type ConversionDescriptor = "as-number" | "as-text";
+
 function combine(
-  input1: number | string,
-  input2: number | string,
-  resultConversion: "as-number" | "as-text" // Example of Literal type
+  input1: Conbinable,
+  input2: Conbinable,
+  resultConversion: ConversionDescriptor // Example of Literal type
 ) {
   let result;
 
