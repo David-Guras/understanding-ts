@@ -1,13 +1,17 @@
-//const cannot be changed
+// const cannot be changed
 const anotherName = "David";
 
-//let has block scope
+// let has block scope
 let age = 35;
 
-//arrow function
+// arrow function
 const addStuff = (a: number, b: number) =>  a + b;
 
-//variation of arrow function
+// defatul values for parameters, can be called with one argument
+// parameters without default should come first
+const addMoreStuff = (a: number, b: number = 1) =>  a + b;
+
+// variation of arrow function
 const button = document.querySelector("button");
 
 if (button) {
