@@ -29,7 +29,7 @@ const somePerson = {
   name: "David",
   height: "6'3''",
 };
-const copiedPerson = { ...person };
+const copiedPerson = { ...somePerson };
 
 // rest parameters
 const someAdd = (...numbers: number[]) => {
@@ -38,3 +38,6 @@ const someAdd = (...numbers: number[]) => {
     return curResult + curValue;
   }, 0);
 };
+
+const someAddedNumber = someAdd(5, 10, 2, 3.5, 98);
+console.log(someAddedNumber);
