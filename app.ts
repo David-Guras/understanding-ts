@@ -30,3 +30,11 @@ const somePerson = {
   height: "6'3''",
 };
 const copiedPerson = { ...person };
+
+// rest parameters
+const someAdd = (...numbers: number[]) => {
+  let result = 0;
+  return numbers.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
